@@ -121,7 +121,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <VideoCard
-            thumbnailSrc="/thumbnail/1.png"
+            thumbnailSrc="/thumbnail/1n.png"
             videoSrc="/videos/1.mp4"
             duration="0:09"
             currentTime="0:00"
@@ -145,13 +145,13 @@ export default function Home() {
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/5.png"
+            thumbnailSrc="/thumbnail/5n.png"
             videoSrc="/videos/5.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/9.png"
+            thumbnailSrc="/thumbnail/99.png"
             videoSrc="/videos/9.mp4"
             duration="0:09"
             currentTime="0:00"
@@ -169,19 +169,19 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <VideoCard
-            thumbnailSrc="/thumbnail/11.png"
+            thumbnailSrc="/thumbnail/111.png"
             videoSrc="/videos/11.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/13.png"
+            thumbnailSrc="/thumbnail/133.png"
             videoSrc="/videos/13.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/15.png"
+            thumbnailSrc="/thumbnail/155.png"
             videoSrc="/videos/15.mp4"
             duration="0:02"
             currentTime="0:00"
