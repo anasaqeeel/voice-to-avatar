@@ -127,19 +127,19 @@ export default function Home() {
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/2.png"
+            thumbnailSrc="/thumbnail/2n.png"
             videoSrc="/videos/2.mp4"
             duration="0:09"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/3.png"
+            thumbnailSrc="/thumbnail/3n.png"
             videoSrc="/videos/3.mp4"
             duration="0:09"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/4.png"
+            thumbnailSrc="/thumbnail/4n.png"
             videoSrc="/videos/4.mp4"
             duration="0:05"
             currentTime="0:00"
@@ -187,19 +187,19 @@ export default function Home() {
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/17.png?v=1"
+            thumbnailSrc="/thumbnail/17n.png?v=1"
             videoSrc="/videos/17.mp4"
             duration="0:07"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/19.png"
+            thumbnailSrc="/thumbnail/19n.png"
             videoSrc="/videos/19.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/20.png"
+            thumbnailSrc="/thumbnail/20n.png"
             videoSrc="/videos/20.mp4"
             duration="0:05"
             currentTime="0:00"
@@ -217,37 +217,37 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <VideoCard
-            thumbnailSrc="/thumbnail/24.png"
+            thumbnailSrc="/thumbnail/24n.png"
             videoSrc="/videos/24.mp4"
             duration="0:02"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/30.png"
+            thumbnailSrc="/thumbnail/30n.png"
             videoSrc="/videos/30.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/38.png"
+            thumbnailSrc="/thumbnail/38n.png"
             videoSrc="/videos/38.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/35.png"
+            thumbnailSrc="/thumbnail/35n.png"
             videoSrc="/videos/35.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/27.png"
+            thumbnailSrc="/thumbnail/27n.png"
             videoSrc="/videos/27.mp4"
             duration="0:04"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/34.png"
+            thumbnailSrc="/thumbnail/34n.png"
             videoSrc="/videos/34.mp4"
             duration="0:05"
             currentTime="0:00"
