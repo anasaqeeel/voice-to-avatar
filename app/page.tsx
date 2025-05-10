@@ -1,103 +1,262 @@
-import Image from "next/image";
+import Image from "next/image"
+import { FileText, Github, ExternalLink } from "lucide-react"
+import VideoCard from "@/components/video-card"
+import ComparisonCard from "@/components/comparison-card"
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-black text-white">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center py-16 px-4 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold mb-4">FantasyTalking</h1>
+        <h2 className="text-xl md:text-2xl mb-8">
+          Realistic Talking Portrait Generation via Coherent Motion Synthesis
+        </h2>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* Authors */}
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6">
+          <div className="flex items-center">
+            <a href="#" className="text-blue-400 hover:underline">
+              Mengchao Wang<sup>1*</sup>
+            </a>
+          </div>
+          <div className="flex items-center">
+            <a href="#" className="text-blue-400 hover:underline">
+              Qiang Wang<sup>1*</sup>
+            </a>
+          </div>
+          <div className="flex items-center">
+            <a href="#" className="text-blue-400 hover:underline">
+              Fan Jiang<sup>1†</sup>
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6">
+          <div className="flex items-center">
+            <a href="#" className="text-blue-400 hover:underline">
+              Yaqi Fan<sup>2</sup>
+            </a>
+          </div>
+          <div className="flex items-center">
+            <a href="#" className="text-blue-400 hover:underline">
+              Yunpeng Zhang<sup>1,2</sup>
+            </a>
+          </div>
+          <div className="flex items-center">
+            <a href="#" className="text-blue-400 hover:underline">
+              YongGang Qi<sup>2‡</sup>
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6">
+          <div className="flex items-center">
+            <a href="#" className="text-blue-400 hover:underline">
+              Kun Zhao<sup>1</sup>
+            </a>
+          </div>
+          <div className="flex items-center">
+            <a href="#" className="text-blue-400 hover:underline">
+              Mu Xu<sup>1</sup>
+            </a>
+          </div>
+        </div>
+
+        {/* Affiliations */}
+        <div className="mb-6">
+          <p>
+            <sup>1</sup>AMAP, Alibaba Group
+          </p>
+          <p>
+            <sup>2</sup>Beijing University of Posts and Telecommunications
+          </p>
+        </div>
+
+        {/* Notes */}
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-8">
+          <p>
+            <sup>*</sup>Equal contribution
+          </p>
+          <p>
+            <sup>†</sup>Project lead
+          </p>
+          <p>
+            <sup>‡</sup>Corresponding author
+          </p>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <Button variant="outline" className="flex items-center gap-2">
+            <FileText className="w-4 h-4" />
+            Paper
+          </Button>
+          <Button variant="outline" className="flex items-center gap-2">
+            <ExternalLink className="w-4 h-4" />
+            arXiv
+          </Button>
+          <Button variant="outline" className="flex items-center gap-2">
+            <Github className="w-4 h-4" />
+            Code
+          </Button>
+        </div>
+      </section>
+
+      {/* Description Section */}
+      <section className="max-w-4xl mx-auto px-6 py-8">
+        <p className="text-sm md:text-base leading-relaxed">
+          Creating a realistic animatable avatar from a single static portrait remains challenging. Existing approaches
+          often struggle to capture subtle facial expressions, the associated global body movements, and the dynamic
+          background. To address these limitations, we propose a novel framework that leverages a pretrained video
+          diffusion transformer model to generate high-fidelity, coherent talking portraits with controllable motion
+          dynamics. At the core of our work is a dual-stage audio-visual alignment strategy. In the first stage, we
+          employ a clip-level training scheme to establish coherent global motion by aligning audio-driven dynamics
+          across the entire scene, including the reference portrait, contextual objects, and background. In the second
+          stage, we refine lip movements at the frame level using a lip-tracing mask, ensuring precise synchronization
+          with audio signals. To preserve identity without compromising motion flexibility, we replace the commonly used
+          reference network with a facial-focused cross-attention module that effectively maintains facial consistency
+          throughout the video. Furthermore, we integrate a motion intensity modulation module that explicitly controls
+          expression and body motion intensity, enabling controllable manipulation of portrait movements beyond mere lip
+          motion. Extensive experimental results show that our proposed approach achieves higher quality with better
+          realism, coherence, motion intensity, and identity preservation.
+        </p>
+      </section>
+
+      {/* Comparison Section */}
+      <section className="max-w-4xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+          <div className="flex flex-col items-center">
+            <h3 className="text-3xl font-bold mb-4">Natural</h3>
+            <div className="relative w-full aspect-video">
+              <Image
+                src="/api/placeholder?height=400&width=400"
+                alt="Natural comparison"
+                width={400}
+                height={400}
+                className="rounded-md object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <h3 className="text-3xl font-bold mb-4">Sonic</h3>
+            <div className="relative w-full aspect-video">
+              <Image
+                src="/api/placeholder?height=400&width=400"
+                alt="Sonic comparison"
+                width={400}
+                height={400}
+                className="rounded-md object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <h3 className="text-3xl font-bold mb-4">Ours</h3>
+            <div className="relative w-full aspect-video">
+              <Image
+                src="/api/placeholder?height=400&width=400"
+                alt="Our solution comparison"
+                width={400}
+                height={400}
+                className="rounded-md object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Generated Videos Section */}
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="text-4xl font-bold mb-6">Generated Videos</h2>
+        <p className="mb-8">
+          FantasyTalking can generate highly realistic lip synchronization, ensuring that the character's mouth
+          movements match the audio. Supports various styles of avatars, whether realistic or cartoon, and can generate
+          high-quality conversation videos.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:09" currentTime="0:02" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:09" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:09" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:02" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:02" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:09" currentTime="0:06" />
+        </div>
+      </section>
+
+      {/* Realistic Talking Videos Section */}
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="text-4xl font-bold mb-6">Realistic Talking Videos</h2>
+        <p className="mb-8">
+          FantasyTalking supports the generation of realistic talking videos with various body ranges and orientations,
+          including close-up portraits, half-body, full-body, as well as front-facing and side-facing poses.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:01" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:02" currentTime="0:01" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:07" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:02" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+        </div>
+      </section>
+
+      {/* Diverse Character Styles Section */}
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="text-4xl font-bold mb-6">Diverse Character Styles</h2>
+        <p className="mb-8">
+          FantasyTalking can animate characters and animals in various styles, generating dynamic, expressive, and
+          naturally realistic stylized videos.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:02" currentTime="0:01" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:04" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+        </div>
+      </section>
+
+      {/* Comparison with closed-source methods */}
+      <section className="max-w-6xl mx-auto px-6 py-12">
+        <h2 className="text-4xl font-bold mb-6">Comparison with closed-source methods</h2>
+        <p className="mb-8">
+          We compared the performance of our FantasyTalking model with OmniHuman-1, the current SOTA method for
+          multimodality- conditioned human video generation.
+        </p>
+
+        <div className="space-y-8">
+          <ComparisonCard
+            referenceImage="/api/placeholder?height=300&width=300"
+            omniHumanImage="/api/placeholder?height=300&width=300"
+            fantasyTalkingImage="/api/placeholder?height=300&width=300"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+
+          <ComparisonCard
+            referenceImage="/api/placeholder?height=300&width=300"
+            omniHumanImage="/api/placeholder?height=300&width=300"
+            fantasyTalkingImage="/api/placeholder?height=300&width=300"
+            fantasyTalkingImage2="/api/placeholder?height=300&width=300"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+
+          <ComparisonCard
+            originalImage="/api/placeholder?height=300&width=300"
+            omniHumanImage="/api/placeholder?height=300&width=300"
+            fantasyTalkingImage="/api/placeholder?height=300&width=300"
+            isOriginal={true}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+        </div>
+      </section>
+    </main>
+  )
 }
