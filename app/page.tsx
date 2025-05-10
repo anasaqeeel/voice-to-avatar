@@ -187,7 +187,7 @@ export default function Home() {
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/thumbnail/17.png"
+            thumbnailSrc="/thumbnail/34.png"
             videoSrc="/videos/17.mp4"
             duration="0:07"
             currentTime="0:00"
