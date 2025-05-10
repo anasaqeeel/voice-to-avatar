@@ -13,7 +13,7 @@
 # testing
 /coverage
 /public/videos
-
+/public/thumbnail
 # next.js
 /.next/
 /out/
