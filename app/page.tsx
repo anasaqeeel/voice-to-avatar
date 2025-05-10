@@ -4,6 +4,7 @@ import VideoCard from "@/components/video-card"
 import ComparisonCard from "@/components/comparison-card"
 import { Button } from "@/components/ui/button"
 
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
@@ -120,37 +121,37 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/1.png"
             videoSrc="/videos/1.mp4"
             duration="0:09"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/2.png"
             videoSrc="/videos/2.mp4"
             duration="0:09"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/3.png"
             videoSrc="/videos/3.mp4"
             duration="0:09"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/4.png"
             videoSrc="/videos/4.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/5.png"
             videoSrc="/videos/5.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/9.png"
             videoSrc="/videos/9.mp4"
             duration="0:09"
             currentTime="0:00"
@@ -168,37 +169,37 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/11.png"
             videoSrc="/videos/11.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/13.png"
             videoSrc="/videos/13.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/15.png"
             videoSrc="/videos/15.mp4"
             duration="0:02"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/17.png"
             videoSrc="/videos/17.mp4"
             duration="0:07"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/19.png"
             videoSrc="/videos/19.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/20.png"
             videoSrc="/videos/20.mp4"
             duration="0:05"
             currentTime="0:00"
@@ -216,37 +217,37 @@ export default function Home() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/24.png"
             videoSrc="/videos/24.mp4"
             duration="0:02"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/30.png"
             videoSrc="/videos/30.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/38.png"
             videoSrc="/videos/38.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/35.png"
             videoSrc="/videos/35.mp4"
             duration="0:05"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/27.png"
             videoSrc="/videos/27.mp4"
             duration="0:04"
             currentTime="0:00"
           />
           <VideoCard
-            thumbnailSrc="/api/placeholder?height=400&width=400"
+            thumbnailSrc="/thumbnail/34.png"
             videoSrc="/videos/34.mp4"
             duration="0:05"
             currentTime="0:00"
