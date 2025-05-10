@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "FantasyTalking - Realistic Talking Portrait Generation",
+  title: "Voice-TO-Avatar - Realistic Talking Portrait Generation",
   description: "Realistic Talking Portrait Generation via Coherent Motion Synthesis",
 }
 

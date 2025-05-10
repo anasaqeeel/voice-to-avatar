@@ -9,7 +9,7 @@ export default function Home() {
     <main className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center py-16 px-4 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">FantasyTalking</h1>
+        <h1 className="text-5xl md:text-6xl font-bold mb-4">Voice-TO-Avatar</h1>
         <h2 className="text-xl md:text-2xl mb-8">
           Realistic Talking Portrait Generation via Coherent Motion Synthesis
         </h2>
@@ -29,37 +29,6 @@ export default function Home() {
           <div className="flex items-center">
             <a href="#" className="text-blue-400 hover:underline">
               Fan Jiang<sup>1†</sup>
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6">
-          <div className="flex items-center">
-            <a href="#" className="text-blue-400 hover:underline">
-              Yaqi Fan<sup>2</sup>
-            </a>
-          </div>
-          <div className="flex items-center">
-            <a href="#" className="text-blue-400 hover:underline">
-              Yunpeng Zhang<sup>1,2</sup>
-            </a>
-          </div>
-          <div className="flex items-center">
-            <a href="#" className="text-blue-400 hover:underline">
-              YongGang Qi<sup>2‡</sup>
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-6">
-          <div className="flex items-center">
-            <a href="#" className="text-blue-400 hover:underline">
-              Kun Zhao<sup>1</sup>
-            </a>
-          </div>
-          <div className="flex items-center">
-            <a href="#" className="text-blue-400 hover:underline">
-              Mu Xu<sup>1</sup>
             </a>
           </div>
         </div>
@@ -126,42 +95,16 @@ export default function Home() {
 
       {/* Comparison Section */}
       <section className="max-w-4xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-          <div className="flex flex-col items-center">
-            <h3 className="text-3xl font-bold mb-4">Natural</h3>
-            <div className="relative w-full aspect-video">
-              <Image
-                src="/api/placeholder?height=400&width=400"
-                alt="Natural comparison"
-                width={400}
-                height={400}
-                className="rounded-md object-cover"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-3xl font-bold mb-4">Sonic</h3>
-            <div className="relative w-full aspect-video">
-              <Image
-                src="/api/placeholder?height=400&width=400"
-                alt="Sonic comparison"
-                width={400}
-                height={400}
-                className="rounded-md object-cover"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-3xl font-bold mb-4">Ours</h3>
-            <div className="relative w-full aspect-video">
-              <Image
-                src="/api/placeholder?height=400&width=400"
-                alt="Our solution comparison"
-                width={400}
-                height={400}
-                className="rounded-md object-cover"
-              />
-            </div>
+        <div className="flex justify-center">
+          <div className="relative w-full max-w-3xl aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/L8iBGuuJKlE"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-md w-full h-full"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -176,12 +119,42 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:09" currentTime="0:02" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:09" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:09" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:02" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:02" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:09" currentTime="0:06" />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/1.mp4"
+            duration="0:09"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/2.mp4"
+            duration="0:09"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/3.mp4"
+            duration="0:09"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/4.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/5.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/9.mp4"
+            duration="0:09"
+            currentTime="0:00"
+          />
         </div>
       </section>
 
@@ -194,15 +167,42 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:01" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:02" currentTime="0:01" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:07" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:02" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/11.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/13.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/15.mp4"
+            duration="0:02"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/17.mp4"
+            duration="0:07"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/19.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/20.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
         </div>
       </section>
 
@@ -215,15 +215,42 @@ export default function Home() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:02" currentTime="0:01" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:04" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
-          <VideoCard thumbnailSrc="/api/placeholder?height=400&width=400" duration="0:05" currentTime="0:00" />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/24.mp4"
+            duration="0:02"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/30.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/38.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/35.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/27.mp4"
+            duration="0:04"
+            currentTime="0:00"
+          />
+          <VideoCard
+            thumbnailSrc="/api/placeholder?height=400&width=400"
+            videoSrc="/videos/34.mp4"
+            duration="0:05"
+            currentTime="0:00"
+          />
         </div>
       </section>
 
